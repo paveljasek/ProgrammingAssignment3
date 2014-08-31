@@ -44,6 +44,14 @@ rankhospital("MD", "heart attack", "worst")
 rankhospital("MN", "heart attack", 5000)
 #[1] NA
 
+
+# try out rankall.R -------------------------------------------------------
+
+source("rankall.R")
+head(rankall("heart attack", 20), 10)
+tail(rankall("pneumonia", "worst"), 3)
+tail(rankall("heart failure"), 10)
+
 # submitting --------------------------------------------------------------
 
 source("http://d396qusza40orc.cloudfront.net/rprog%2Fscripts%2Fsubmitscript3.R")
